@@ -203,3 +203,4 @@
 - transfer money
 - I want to transfer $100 to John
 - i want to transfer $400 to Akela
+- transfer money now
