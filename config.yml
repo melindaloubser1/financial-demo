@@ -9,8 +9,10 @@ pipeline:
     min_ngram: 1
     max_ngram: 4
   - name: DIETClassifier
-    epochs: 100
+    epochs: 10
   - name: EntitySynonymMapper
+  - name: ResponseSelector
+    retrieval_intent: faq
   - name: DucklingHTTPExtractor
     url: http://localhost:8000
     dimensions:

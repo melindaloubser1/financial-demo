@@ -26,9 +26,9 @@ intents:
 - restart
 - trigger_handoff
 - human_handoff
-- handoff:
-    triggers: utter_greet
+- handoff
 - help
+- faq
 
 entities:
 - amount-of-money
@@ -214,6 +214,8 @@ actions:
 - action_recipients
 - action_handoff
 - action_handoff_options
+- respond_faq
+
 forms:
 - cc_payment_form
 - transfer_form
