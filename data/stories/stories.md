@@ -1,3 +1,8 @@
+## faq
+* faq
+  - respond_faq
+
+
 ## greet/bye path
 * greet
   - utter_greet
