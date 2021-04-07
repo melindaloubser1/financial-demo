@@ -5,8 +5,8 @@ tasks:
   - before: 'rasa train'
     command: 'RASA_X_PASSWORD=password rasa x --no-prompt & disown'
   - command: 'rasa run actions --debug --port 5056 & disown'
-  - before: 'cd /home/gitpod/duckling'
-    command: 'stack exec duckling-example-exe & disown'
+  # - before: 'cd /home/gitpod/duckling'
+  #   command: 'stack exec duckling-example-exe & disown'
   # - command: 'docker run -d -p 8000:8000 rasa/duckling:latest '
 
 ports:
