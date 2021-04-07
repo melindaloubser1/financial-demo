@@ -7,8 +7,7 @@ tasks:
   - command: 'rasa run actions --debug --port 5056 & disown'
   # - before: 'git clone https://github.com/facebook/duckling.git && cd duckling && stack build'
   #   command: 'stack exec duckling-example-exe & disown'
-  - before: 'docker-up'
-    command: 'docker run -d -p 8000:8000 rasa/duckling:latest '
+  - command: 'docker run -d -p 8000:8000 rasa/duckling:latest '
 
 ports:
   - port: 5002
