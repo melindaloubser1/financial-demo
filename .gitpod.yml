@@ -13,7 +13,7 @@ tasks:
 ports:
   - port: 5002
   - port: 5005
-  - port: 5055
+  - port: 5056
   - port: 8000
 vscode:
   extensions:
