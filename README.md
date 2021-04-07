@@ -1,3 +1,12 @@
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/melindaloubser1/financial-demo/tree/1.x)
+ 
+You can open this repository in Gitpod using the button above to get access to an environment that has Rasa & Rasa X localmode already set up in your browser.
+You will need to create a Gitpod account if you haven't already.
+ # Financial Services Example Bot
+ 
+ This is an example chatbot demonstrating how to build AI assistants for financial services and banking. This starter pack can be used as a base for your own development or as a reference guide for implementing common banking-industry features with Rasa. It includes pre-built intents, actions, and stories for handling conversation flows like checking spending history and transferring money to another account.
+
+
 # Notes on Rasa `1.x / 2.0`
 
 1. The master branch of this repo is compatible with Rasa Open Source **version 1.x**
@@ -14,6 +23,8 @@ This is an example chatbot demonstrating how to build AI assistants for financia
 **Table of Contents**
 
 - [Financial Services Example Bot](#financial-services-example-bot)
+- [Notes on Rasa `1.x / 2.0`](#notes-on-rasa-1x--20)
+- [Financial Services Example Bot](#financial-services-example-bot-1)
   - [Install dependencies](#install-dependencies)
   - [Run the bot](#run-the-bot)
   - [Overview of the files](#overview-of-the-files)
