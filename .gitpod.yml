@@ -14,7 +14,7 @@ ports:
   - port: 5002
   - port: 5005
   - port: 5056
-  - port: 8000
+  # - port: 8000
 vscode:
   extensions:
     - alexcvzz.vscode-sqlite@0.10.1:m5L+iEIP/9wJYy5L2XCVlQ==
