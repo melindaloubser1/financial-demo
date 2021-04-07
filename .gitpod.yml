@@ -4,7 +4,9 @@ image:
 tasks:
   - before: 'rasa train'
     command: 'RASA_X_PASSWORD=password rasa x --no-prompt & disown'
-  - command: 'rasa run actions --debug --port 5056'
+  - command: 'rasa run actions --debug --port 5056 & disown'
+  - before: 'git clone https://github.com/facebook/duckling.git && cd duckling && stack build'
+    command: 'stack exec duckling-example-exe & disown'
 
 ports:
   - port: 5002
