@@ -1,27 +1,27 @@
 language: en
 pipeline:
-  - name: WhitespaceTokenizer
-  - name: RegexFeaturizer
-  - name: LexicalSyntacticFeaturizer
-  - name: CountVectorsFeaturizer
-  - name: CountVectorsFeaturizer
-    analyzer: "char_wb"
-    min_ngram: 1
-    max_ngram: 4
-  - name: DIETClassifier
-    epochs: 100
-  - name: EntitySynonymMapper
-  - name: DucklingHTTPExtractor
-    url: ${RASA_DUCKLING_HTTP_URL}
-    dimensions:
-    - amount-of-money
-    - time
-    - number
-  - name: "SpacyNLP"
-    model: "en_core_web_md"
-  - name: "SpacyEntityExtractor"
-    dimensions: ["PERSON"]
-
+- name: WhitespaceTokenizer
+- name: RegexFeaturizer
+- name: LexicalSyntacticFeaturizer
+- name: CountVectorsFeaturizer
+- name: CountVectorsFeaturizer
+  analyzer: char_wb
+  min_ngram: 1
+  max_ngram: 4
+- name: DIETClassifier
+  epochs: 100
+- name: DucklingHTTPExtractor
+  url: http://130.211.61.43:8000
+  dimensions:
+  - amount-of-money
+  - time
+  - number
+- name: SpacyNLP
+  model: en_core_web_md
+- name: SpacyEntityExtractor
+  dimensions:
+  - PERSON
+- name: EntitySynonymMapper
 policies:
 - name: FallbackPolicy
   nlu_threshold: 0.75
